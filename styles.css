@@ -1,0 +1,687 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.container { 
+    max-width: 100vw; 
+    overflow-x: hidden; 
+}
+
+/* General styling */
+body {
+    font-family: 'KoHo', sans-serif;
+    background-color: #fff061;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Add this for vertical stacking */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Logo styling */
+.logo {
+position: fixed; /* Fix the logo to the top */
+top: 20px; /* Distance from the top */
+left: 150px; /* Distance from the left */
+height: 50px; /* Adjust height as needed */
+display: none; /* Hide logo by default */
+}
+
+/* Show logo only on larger screens */
+@media (min-width: 768px) {
+.logo {
+display: block; /* Show logo on larger screens */
+}
+}
+
+
+        /*------------------Navigation Bar------------*/
+        /* Navbar container */
+/* Custom Navbar Styles */
+
+/* Navbar Container */
+.custom-navbar-container {
+    position: fixed;
+    top: 10px;
+    left: 70%;
+    transform: translateX(-50%);
+    right:0%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    padding: 15px 20px;
+    z-index: 1000;
+    border: 2px solid salmon;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide default scrollbar */
+    height: 40px; /* Adjusted height */
+}
+
+/* Scrollable Navbar */
+.custom-navbar-container .custom-navbar {
+    display: flex;
+    gap: 15px; /* Smaller gap between items */
+    transition: all 0.3s ease;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    align-items: center; /* Align items to the center vertically */
+}
+
+/* Hide scrollbar for all browsers */
+.custom-navbar-container .custom-navbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.custom-navbar-container .custom-navbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Navbar List */
+.custom-navbar-container .custom-navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Smaller gap */
+}
+
+/* Navbar Links */
+.custom-navbar-container .custom-navbar-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px; /* Reduced padding */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.custom-navbar-container .custom-navbar-link.active,
+.custom-navbar-container .custom-navbar-link:hover {
+    color: salmon;
+    background-color: rgba(255, 160, 122, 0.2);
+    border: 2px solid salmon;
+}
+
+/* Scroll Indicator Arrows */
+.custom-navbar-container .custom-navbar-scroll-indicator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid salmon;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: custom-navbar-bounce 2s infinite;
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar-container .custom-navbar-scroll-indicator:hover {
+    background-color: rgba(255, 160, 122, 0.8);
+}
+
+.custom-navbar-container .custom-navbar-scroll-indicator.left {
+    left: -10px; /* Adjusted for smaller navbar */
+}
+
+.custom-navbar-container .custom-navbar-scroll-indicator.right {
+    right: -10px; /* Adjusted for smaller navbar */
+}
+
+/* Arrow Styles */
+.custom-navbar-container .custom-navbar-scroll-indicator::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid salmon;
+    border-right: 2px solid salmon;
+    transform: rotate(45deg);
+}
+
+.custom-navbar-container .custom-navbar-scroll-indicator.right::before {
+    transform: rotate(-135deg);
+}
+
+/* Bounce Animation */
+@keyframes custom-navbar-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    40% {
+        transform: translateY(-50%) translateX(-5px);
+    }
+    60% {
+        transform: translateY(-50%) translateX(5px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-navbar-container {
+        width: 80%;
+        left:50%;
+        padding: 12px 16px;
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    .custom-navbar-container .custom-navbar-link {
+        padding: 8px 12px;
+        font-size: 0.85rem; /* Even smaller font size */
+    }
+
+    .custom-navbar-container .custom-navbar-scroll-indicator {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Sidebar
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background: linear-gradient(180deg, #22ff98, #F5EB35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}*/
+
+
+
+.sidebar {
+position: fixed;
+right:92%;
+top: 0;
+width: 40px;
+height: 100vh;
+background: linear-gradient(180deg,#00000000,#00000000); /* Add more gradient colors */
+background-size: 100% 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 30px;
+animation: gradientMove 1s ease infinite; /* Animation */
+margin-right: 2%;
+z-index: 1000;
+
+}
+
+@keyframes gradientMove {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+
+.sidebar .icon {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 120%;
+    
+}
+
+.sidebar .icon:hover {
+    transform: scale(2.2);
+    color:rgb(0, 0, 0);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 10%;
+    position: relative;
+}
+
+.hero-content {
+    max-width:50%;
+}
+
+.hero h1 {
+    font-family: 'KoHo', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2cm;
+
+}
+
+.hero h2 {
+    font-family: 'Klee One', cursive;
+    font-size: 1.4rem;
+    padding-top:0;
+
+}
+
+.hero p {
+    font-family: 'Kotta One', serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+}
+
+.hero .btn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: salmon solid 3px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #F5EB35;
+}
+
+/* Background Shape */
+.shape-background {
+    padding-top: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    background-color: #78ff73;
+    border-radius: 50%;
+    clip-path: ellipse(100% 60% at 100% 0%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+
+
+.shape-background-2 {
+    padding-top: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    background-color: #4ed7db50;
+    border-radius: 50%;
+    clip-path: ellipse(100% 60% at 100% 0%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+
+.hero-image {
+    width: 500px;
+    height: 400px;
+    border-radius: 0%;
+    overflow: hidden;
+    padding-right: 40%;
+    padding-top: -5cm;
+
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* About Me Section */
+.about {
+    padding: 5% 10%;
+    text-align: center;
+    background-color: #555555e1;
+    color: rgb(255, 255, 255);
+    width: 100%; /* Full width for the section */
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.about h2 {
+    font-family: 'Klee One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 13%;
+    margin-right: 15%;
+}
+
+.about p {
+    font-family: 'Kotta One', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-right: 15%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+
+    .hero-image {
+    width: 350px;
+    height: 270px;
+    border-radius: 0%;
+    overflow: hidden;
+    padding-right: 40%;
+    padding-top: 1cm;
+
+}
+
+/*
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fad3867c;
+        border-radius: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+
+    /* Show only 3 navigation items on mobile devices 
+    .navbar ul li:nth-child(n+6) {
+        display: none;
+    }
+
+    */
+
+
+
+    /* Horizontal Navbar styling */
+.navbar {
+position:fixed;
+top: 10px;
+background-color: #fff3dabe;
+border-radius: 20px;
+z-index: 10;
+overflow-x:scroll; /* Enable horizontal scrolling */
+border: solid salmon 2px;
+}
+
+.navbar::-webkit-scrollbar {
+display: none; /* Hide scrollbar */
+}
+
+.navbar ul {
+list-style: none;
+margin-left: 10%;
+padding-left:10%;
+display: flex; /* Display items in a row */
+gap: 20px;
+white-space: nowrap; /* Prevent line breaks */
+}
+
+.navbar ul li {
+display: inline-block; /* Keep items inline */
+}
+
+.navbar ul li a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+padding: 10px 20px;
+
+display: block;
+transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+border: solid salmon 2px;
+color:salmon
+}
+
+/* Mobile adjustments for the navbar */
+@media (max-width: 768px) {
+.navbar {
+width: 100%; /* Set navbar width to 100% */
+}
+}
+
+
+    .sidebar {
+        visibility: hidden; /* Make sidebar invisible */
+        position: absolute; /* Remove from layout flow */
+    }
+}
+
+
+
+
+
+/*---------------------Skill page-----------------------------*/
+
+
+
+
+.skills-tools-container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 50px;
+gap: 20px;
+flex-wrap: nowrap;
+}
+
+.skills-left-section {
+max-width: 50%;
+padding: 10px;
+margin-top: 10%;
+margin-left: 7%;
+text-align: justify;
+}
+
+.skills-left-section h1 {
+font-size: 2.5rem;
+margin: 0;
+text-align: left;
+}
+
+.skills-left-section p {
+font-size: 1.2rem;
+margin: 20px 0;
+}
+
+.skills-tools-buttons {
+display: flex;
+gap: 15px;
+}
+
+.skills-tools-buttons button {
+background-color: #FAD386;
+border: none;
+border-radius: 20px;
+color: #000;
+font-size: 1rem;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.skills-tools-buttons button.active {
+background-color: #E6A546;
+}
+
+.skills-tools-buttons button:hover {
+background-color: #E6A546;
+}
+
+.skills-right-section {
+display: flex;
+justify-content: flex-end;
+width: 50%;
+}
+
+.skills-icon-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+width: 50%;
+margin-right: 30%;
+margin-top: 2%;
+}
+
+.skills-icon-box {
+width: 80px;
+height: 80px;
+background-color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position: relative;
+transition: transform 0.3s, box-shadow 0.3s;
+cursor: pointer;
+overflow: hidden;
+}
+
+.skills-icon-box:hover {
+transform: scale(1.1);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skills-icon-box img {
+width: 50px;
+height: 50px;
+}
+
+.skills-icon-box span {
+position: absolute;
+bottom: -40px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 5px;
+border-radius: 5px;
+font-size: 0.9rem;
+transition: bottom 0.3s;
+opacity: 0;
+pointer-events: none;
+}
+
+.skills-icon-box:hover span {
+bottom: 10px;
+opacity: 1;
+pointer-events: auto;
+}
+
+.skills-hidden {
+display: none;
+}
+
+@media screen and (max-width: 768px) {
+.skills-tools-container {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.skills-left-section, .skills-right-section {
+max-width: 100%;
+}
+
+.skills-left-section {
+margin-top: 0;
+}
+
+.skills-icon-grid {
+grid-template-columns: repeat(3, 1fr);
+padding-right: 50%;
+align-items: center;
+align-content: center;
+}
+
+.skills-icon-box {
+width: 70px;
+height: 70px;
+}
+
+.skills-tools-buttons button {
+width: 100px;
+padding: 8px 10px;
+}
+}
+
+.rainbow-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, red, rgb(0, 92, 0), rgb(61, 61, 0), green, blue, indigo, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s ease infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdul Hajees Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Klee+One:wght@600&family=Kotta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+
+    </style>
+</head>
+<body id="home"> 
+    <img src="../Resources/logo.svg" alt="Logo" class="logo">
+<!-- Custom Navbar -->
+<nav class="custom-navbar-container" aria-label="Primary Navigation">
+    <!-- Left Scroll Indicator -->
+    <div class="custom-navbar-scroll-indicator left" onclick="customNavbarScroll(-150)" aria-label="Scroll Left"></div>
+
+    <!-- Navbar Links -->
+    <div class="custom-navbar" id="customNavbar">
+        <ul class="custom-navbar-list">
+            <li><a href="#home" class="custom-navbar-link active">Home</a></li>
+            <li><a href="#about" class="custom-navbar-link">About</a></li>
+            <li><a href="#skills" class="custom-navbar-link">Skills</a></li>
+            <li><a href="#projects" class="custom-navbar-link">Projects</a></li>
+            <li><a href="#certificates" class="custom-navbar-link">Certificates</a></li>
+            <li><a href="#contact" class="custom-navbar-link">Contact</a></li>
+            <li><a href="#testimonials" class="custom-navbar-link">Testimonials</a></li>
+            <li><a href="#blog" class="custom-navbar-link">Blog</a></li>
+            <li><a href="#gallery" class="custom-navbar-link">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Right Scroll Indicator -->
+    <div class="custom-navbar-scroll-indicator right" onclick="customNavbarScroll(150)" aria-label="Scroll Right"></div>
+</nav>
+
+
+    <aside class="sidebar">
+        <a href="https://github.com/aj05hacker" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/abdulhajees" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/abdul_hajees" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        
+    </aside>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span style="font-size: 80%; color: #414141;">Hello, I’m </span><span style="color: rgb(0, 0, 0);font-size:110%;">Abdul Hajees</span></h1>
+            
+            <h3 style="font-weight: bolder; margin-top:-4%;"><span class="rainbow-text">UI UX Designer</span> & Web Developer</h2><br>
+            <p style="padding-bottom:1cm ;text-align: justify; color: #424242;">I create clean, user-friendly digital experiences. Final-year B.Tech IT student seeking opportunities to innovate and grow.</p>
+            <a href="#contact" class="btn" style="margin-top: 3cm;">Get in touch</a>
+        </div>
+        <div class="hero-shape">
+            <div class="shape-background"></div> <!-- Shape in the background -->
+            <div class="hero-image">
+                <img src="../Resources/Hero Image.svg" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    <br id="about"><br><br><br>
+
+    <!-- About Me Section -->
+    <section id="about1" class="about" style="text-align: justify;color: rgb(255, 255, 255);">
+        <h2><span style="text-decoration:underline; color:rgb(148, 0, 0);">About</span> Me</h2>
+        
+        <p>
+            I am Abdul Hajees, a passionate UI/UX Designer and Web Developer with a keen eye for detail and a deep love for creating functional, aesthetically pleasing digital experiences. As a final-year B.Tech IT student, I am constantly learning new technologies and frameworks to stay on the cutting edge of the industry.
+        </p>
+        <br>
+        <p>
+            My goal is to innovate and bring fresh, creative solutions to every project I work on. I believe in the importance of collaboration and communication in achieving the best outcomes. Let's connect and create something amazing together!
+        </p>
+        <!--div class="shape-background-2"></div-->
+    </section>
+
+    <div class="skills-tools-container" id="skills">
+        <div class="skills-left-section">
+            <h1>What My Programming Skills Include</h1>
+            <p>I specialize in creating engaging web experiences using <strong>HTML5, CSS3, JavaScript, Bootstrap, and Python</strong> for front-end development, alongside <strong>UI/UX Design</strong> to craft intuitive interfaces. Toggle below to explore my skills and tools.</p>
+            <div class="skills-tools-buttons">
+                <button id="skills-btn-new" class="active" onclick="toggleSkillsSection('skills-section-new')">Skills</button>
+                <button id="tools-btn-new" onclick="toggleSkillsSection('tools-section-new')">Tools</button>
+            </div>
+        </div>
+        <div class="skills-right-section">
+            <!-- Skills Section -->
+            <div id="skills-section-new" class="skills-icon-grid">
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=19292&format=png&color=000000" alt="Terminal">
+                    <span>Terminal</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/windows.png" alt="Windows">
+                    <span>Windows</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/npm.png" alt="npm">
+                    <span>npm</span>
+                </div>
+                <!-- New skills -->
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/chrome.png" alt="Chrome Dev Tools">
+                    <span>Chrome Dev Tools</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/dns.png" alt="DNS Management">
+                    <span>DNS Management</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=yEzFx4cwLDIh&format=png&color=000000" alt="UI/UX Design">
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=su6dCW05tSlE&format=png&color=000000">
+                    <span>Web Hosting</span>
+                </div>
+                <!-- Subskills -->
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=119124&format=png&color=000000" alt="Wireframing">
+                    <span>Wireframing</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=S_b9vUUOPTop&format=png&color=000000" alt="Prototyping">
+                    <span>Prototyping</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=43151&format=png&color=000000">
+                    <span>Interaction Design</span>
+                </div>
+            </div>
+            <!-- Tools Section -->
+            <div id="tools-section-new" class="skills-icon-grid skills-hidden">
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/figma.png" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt="VS Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux">
+                    <span>Linux</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva">
+                    <span>Canva</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/slack.png" alt="Slack">
+                    <span>Slack</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/chatgpt.png" alt="ChatGPT">
+                    <span>ChatGPT</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=RptV7GaBNyF9&format=png&color=000000" alt="Vercel">
+                    <span>Vercel</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/color/48/000000/kali-linux.png" alt="Kali Linux">
+                    <span>Kali Linux</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=VNCICI1KKMxr&format=png&color=000000" alt="Framer">
+                    <span>Framer</span>
+                </div>
+                <div class="skills-icon-box">
+                    <img src="https://img.icons8.com/?size=100&id=Uc932Kf1WRYu&format=png&color=000000" alt="Blackbox AI">
+                    <span>Blackbox AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
