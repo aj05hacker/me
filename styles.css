@@ -873,7 +873,7 @@ padding: 8px 10px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 0px;
     padding: 0;
     gap: 20px;
     justify-content: center;
@@ -904,7 +904,7 @@ padding: 8px 10px;
   
   /* Card Styling */
   .projects-card {
-    background-color: white;
+    background-color: rgba(210, 177, 177, 0);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -920,13 +920,13 @@ padding: 8px 10px;
   
   .projects-card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: linear-gradient(to bottom left, #ef8d9c7b 40%, #ffc39e74 100%);
     border-radius: 0 0 10px 10px;
     transition: background 0.3s ease;
   }
   
   .projects-card_content:hover {
-    background: linear-gradient(to bottom left, #ff4b4b 40%, #ff7676 100%);
+    background: linear-gradient(to bottom left, #0000005e 40%, #ff7676 100%);
   }
   
   .projects-card_title {
