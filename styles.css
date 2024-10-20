@@ -12,7 +12,7 @@ html {
 /* General styling */
 body {
   font-family: 'KoHo', sans-serif;
-  /* background-image: url(../Resources/bg.svg); */
+  /* background-image: url(./Resources/bg.svg); */
   background-color: #fff890;
   margin: 0;
   padding: 0;
@@ -291,7 +291,7 @@ align-items: center;
 width: 80%;
 padding: 10%;
 position: relative;
-background-image: url('../Resources/hero-bg.svg'); /* Default background for larger screens */
+background-image: url('./Resources/hero-bg.svg'); /* Default background for larger screens */
 background-size: cover;
 background-position: center;
 height:100%;
@@ -300,7 +300,7 @@ height:100%;
 /* Hero Section for Mobile Screens */
 @media only screen and (max-width: 768px) { /* Adjust max-width to fit your mobile criteria */
 .hero {
-    background-image: url('../Resources/bg-mobile.svg'); /* Different image for mobile */
+    background-image: url('./Resources/bg-mobile.svg'); /* Different image for mobile */
     height: 100%;
 }
 }
@@ -361,7 +361,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-image: url('../Resources/bg.svg'); /* Default image for larger screens */
+background-image: url('./Resources/bg.svg'); /* Default image for larger screens */
 background-size: cover; /* Ensures the image covers the entire screen */
 background-position: center; /* Centers the image within the screen */
 background-repeat: no-repeat; /* Prevents repeating of the image */
@@ -371,7 +371,7 @@ z-index: -2; /* Places the image behind other content */
 /* Media query for mobile devices */
 @media (max-width: 768px) { 
 .full-screen-image {
-    background-image: url('../Resources/mobile-bg2.svg'); /* Different image for mobile */
+    background-image: url('./Resources/mobile-bg2.svg'); /* Different image for mobile */
 }
 }
 
@@ -578,7 +578,7 @@ flex-wrap: nowrap;
 }
 
 .skill-project{
-background-image: url(../Resources/skill-project-bg.svg);
+background-image: url(./Resources/skill-project-bg.svg);
 background-position: center;
 background-size:cover;
 }
@@ -1196,7 +1196,7 @@ h2 {
         justify-content: center;
         align-items: center;
         height: 100vh; /* Full height of the screen */
-        background-image: url(../Resources/cover.svg);
+        background-image: url(./Resources/cover.svg);
         background-size: cover;
         background-position: center;
         color: rgb(95, 0, 0);
