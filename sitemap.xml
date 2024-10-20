@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://me.abdulhajees.in/</loc>
+        <lastmod>2024-10-20</lastmod> <!-- Update this to the last modification date -->
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://blogs.abdulhajees.in/</loc>
+        <lastmod>2024-10-20</lastmod> <!-- Update this to the last modification date -->
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://ai.abdulhajees.in/</loc>
+        <lastmod>2024-10-20</lastmod> <!-- No changes, you can keep this date current -->
+        <changefreq>never</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://search.abdulhajees.in/</loc>
+        <lastmod>2024-10-20</lastmod> <!-- No changes, you can keep this date current -->
+        <changefreq>never</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://me.abdulhajees.in/certificates.html</loc>
+        <lastmod>2024-10-20</lastmod> <!-- Update this as needed -->
+        <changefreq>randomly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://me.abdulhajees.in/index.html</loc>
+        <lastmod>2024-10-20</lastmod> <!-- Update this to the last modification date -->
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+</urlset>
