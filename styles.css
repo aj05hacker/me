@@ -733,22 +733,33 @@ padding: 8px 10px;
   font-weight: bold;
   background: linear-gradient(90deg, rgb(255, 36, 36), rgb(104, 255, 104), rgb(123, 174, 255), rgb(128, 128, 128), rgb(255, 0, 230), rgb(58, 255, 47), rgb(255, 128, 128));
   background-size: 400%;
+  
+  /* Standard background-clip (not supported in most browsers for text) */
+  background-clip: text; /* This is mostly ignored */
+  
+  /* Webkit version for text clipping */
   -webkit-background-clip: text;
+  
+  /* Make text transparent so the background gradient shows through */
   -webkit-text-fill-color: transparent;
+  
+  /* Animation for rainbow effect */
   animation: rainbow 2s ease infinite;
 }
 
+/* Define keyframes for the animation */
 @keyframes rainbow {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
+
 
 
 
