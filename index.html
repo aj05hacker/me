@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Klee+One:wght@600&family=Kotta+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <style>
 
     </style>
 </head>
 <body id="home"> 
+
+
+    <!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop">
+    &#8679; <!-- Upward arrow symbol -->
+</a>
+
+
+
     <img src="../Resources/logo.svg" alt="Logo" class="logo">
 <!-- Custom Navbar -->
 <nav class="custom-navbar-container" aria-label="Primary Navigation">
@@ -25,11 +34,11 @@
             <li><a href="#about" class="custom-navbar-link">About</a></li>
             <li><a href="#skills" class="custom-navbar-link">Skills</a></li>
             <li><a href="#projects" class="custom-navbar-link">Projects</a></li>
+            <li><a href="#internships" class="custom-navbar-link">Internships</a></li>
             <li><a href="#certificates" class="custom-navbar-link">Certificates</a></li>
-            <li><a href="#contact" class="custom-navbar-link">Contact</a></li>
-            <li><a href="#testimonials" class="custom-navbar-link">Testimonials</a></li>
             <li><a href="#blog" class="custom-navbar-link">Blog</a></li>
-            <li><a href="#gallery" class="custom-navbar-link">Gallery</a></li>
+            <li><a href="#contact" class="custom-navbar-link">Contact</a></li>
+            <li><a href="#ai" class="custom-navbar-link">AI</a></li>
         </ul>
     </div>
 
@@ -45,16 +54,19 @@
         
     </aside>
 
+    <!-- Colorful Moving Balls -------------------->
+
+
     <section class="hero">
         <div class="hero-content">
-            <h1><span style="font-size: 80%; color: #414141;">Hello, I’m </span><span style="color: rgb(0, 0, 0);font-size:110%;">Abdul Hajees</span></h1>
+            <h1><span class="intro-text">Hello, I’m </span><span class="name-text">Abdul Hajees</span></h1>
             
             <h3 style="font-weight: bolder; margin-top:-4%;"><span class="rainbow-text">UI UX Designer</span> & Web Developer</h2><br>
-            <p style="padding-bottom:1cm ;text-align: justify; color: #424242;">I create clean, user-friendly digital experiences. Final-year B.Tech IT student seeking opportunities to innovate and grow.</p>
+            <p class="hero-text">I create clean, user-friendly digital experiences. Final-year B.Tech IT student seeking opportunities to innovate and grow.</p>
             <a href="#contact" class="btn" style="margin-top: 3cm;">Get in touch</a>
         </div>
         <div class="hero-shape">
-            <div class="shape-background"></div> <!-- Shape in the background -->
+            <div class="full-screen-image"></div> <!-- Shape in the background -->
             <div class="hero-image">
                 <img src="../Resources/Hero Image.svg" alt="Hero Image">
             </div>
@@ -76,6 +88,9 @@
         <!--div class="shape-background-2"></div-->
     </section>
 
+
+    <div class="skill-project">
+    <section class="skills">
     <div class="skills-tools-container" id="skills">
         <div class="skills-left-section">
             <h1>What My Programming Skills Include</h1>
@@ -204,11 +219,12 @@
             </div>
         </div>
     </div>
+  </section>
 
 <!-- Projects Section -->
 <section class="projects-section" id="projects">
     <div class="projects-main">
-        <h1 class="projects-title" style="font-size:50px;text-decoration: underline;">What I’ve Built</h1><br><br>
+        <h2 class="projects-title" style="font-size:50px;text-decoration: underline;">What I’ve Built</h2><br><br>
         <ul class="projects-cards">
             <li class="projects-cards_item">
                 <div class="projects-card">
@@ -216,8 +232,8 @@
                         <img class="projects-card_img" src="/Resources/project_1.jpg" alt="Project Image 1">
                     </div>
                     <div class="projects-card_content">
-                        <h2 class="projects-card_title">Time and Thought</h2>
-                        <p class="projects-card_text">This is a blog showcase where anyone can submit posts. It dynamically manages content via Firebase, allowing easy addition of new blogs.</p>
+                        <h2 class="projects-card_title"><b>Time and Thought</b></h2>
+                        <p class="projects-card_text"><b>This is a blog showcase where anyone can submit posts. It dynamically manages content via Firebase, allowing easy addition of new blogs.</b></p>
                         <a href="https://blogs.abdulhajees.in" class="projects-btn projects-card_btn" style="padding-left: 26%;">View Live Project</a>
                     </div>
                 </div>
@@ -228,8 +244,8 @@
                         <img class="projects-card_img" src="/Resources/project_2.jpg" alt="Project Image 2">
                     </div>
                     <div class="projects-card_content">
-                        <h2 class="projects-card_title">AH Chat Bot</h2>
-                        <p class="projects-card_text">A conversational AI built using the Google Gemini API. It simulates human-like interactions and offers various intelligent responses quickly.</p>
+                        <h2 class="projects-card_title"><b>AH Chat Bot</b></h2>
+                        <p class="projects-card_text"><b>A conversational AI built using the Google Gemini API. It simulates human-like interactions and offers various intelligent responses quickly.</b></p>
                         <a href="https://ai.abdulhajees.in" class="projects-btn projects-card_btn" style="padding-left: 26%;">View Live Project</a>
 
                     </div>
@@ -241,8 +257,8 @@
                         <img class="projects-card_img" src="../Resources/project_3.jpg" alt="Project Image 3">
                     </div>
                     <div class="projects-card_content">
-                        <h2 class="projects-card_title">Portfolio Website</h2>
-                        <p class="projects-card_text">My portfolio website that showcases my skills, experiences, certificates, and projects. It’s a comprehensive reflection of my professional growth and goals.</p>
+                        <h2 class="projects-card_title"><b>Portfolio Website</b></h2>
+                        <p class="projects-card_text"><b>My portfolio website that showcases my skills, experiences, certificates, and projects. It’s a comprehensive reflection of my professional growth and goals.</b></p>
                         <a href="https://me.abdulhajees.in" class="projects-btn projects-card_btn" style="padding-left: 26%;">View Live Project</a>
                     </div>
                 </div>
@@ -252,8 +268,8 @@
                         <img class="projects-card_img" src="/Resources/project_4.jpg" alt="Project Image 3">
                     </div>
                     <div class="projects-card_content">
-                        <h2 class="projects-card_title">Search Hub</h2>
-                        <p class="projects-card_text">A web-based tool featuring a search bar with access to multiple search engines such as Shodan and GHDB. Ideal for gathering information across various platforms.</p>
+                        <h2 class="projects-card_title"><b style="color: black;">Search Hub</b></h2>
+                        <p class="projects-card_text"><b>A web-based tool featuring a search bar with access to multiple search engines such as Shodan and GHDB. Ideal for gathering information across various platforms.</b></p>
                         <a href="https://search.abdulhajees.in" class="projects-btn projects-card_btn" style="padding-left: 26%;">View Live Project</a>
                     </div>
                 </div>
@@ -261,8 +277,124 @@
         </ul>
     </div>
 </section>
+</div>
+<h2 style="color:rgb(79, 6, 6);margin-top: 60px;padding-top:5%;text-decoration: underline;" id="internships">My Internship Experiences</h2>
+<section class="internship-timeline" style="margin-bottom: 10%;">
+  <div class="timeline-section">
+    <div class="timeline-content">
+      <h2><strong>HILIFE.<span style="color: rgb(255, 178, 34);">AI</span></strong></h2>
+      <div class="timeline-text">
+        <img src="https://about.hilifeai.com/wp-content/themes/hilife/images/logo.png" alt="Flower Image;" style="size: 200%;">
+        <p><strong>Role:</strong> Software Developer Intern</p>
+        <p><strong>Duration:</strong> June 2023 - August 2023</p>
+        <p><strong>Key Contributions:</strong></p>
+        <ul>
+          <li>Developed a full-stack web application using React and Node.js.</li>
+          <li>Collaborated with cross-functional teams to design scalable solutions.</li>
+        </ul>
+        <a href="#intern2" style="text-decoration: none;"><p href="#intern2" class="arrow"; style="color: rgb(255, 255, 255); font-size:1.5cm;text-decoration: none;">↓</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-section" id="intern2">
+    <div class="timeline-content">
+      <h2><strong>Exposys Data Labs</strong></h2>
+      <div class="timeline-text">
+        <img src="../Resources/exposys.png" alt="Flower Image">
+        <p><strong>Role:</strong> Data Science Intern</p>
+        <p><strong>Duration:</strong> January 2023 - March 2023</p>
+        <p><strong>Key Contributions:</strong></p>
+        <ul>
+          <li>Analyzed large datasets to drive business decisions.</li>
+          <li>Built machine learning models to optimize marketing strategies.</li>
+        </ul>
+        <a href="#intern3" style="text-decoration: none;"><p class="arrow"; style="color: rgb(255, 255, 255); font-size:1.5cm;text-decoration: none;">↓</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-section" id="intern3">
+    <div class="timeline-content">
+      <h2><strong>HILIFE.<span style="color: rgb(255, 178, 34);">AI</span></strong></h2>
+      <div class="timeline-text">
+        <img src="https://about.hilifeai.com/wp-content/themes/hilife/images/logo.png" alt="Flower Image">
+        <p><strong>Role:</strong> Software Developer Intern</p>
+        <p><strong>Duration:</strong> June 2023 - August 2023</p>
+        <p><strong>Key Contributions:</strong></p>
+        <ul>
+          <li>Developed a full-stack web application using React and Node.js.</li>
+          <li>Collaborated with cross-functional teams to design scalable solutions.</li>
+        </ul>
+        <a href="#intern4" style="text-decoration: none;"><p class="arrow"; style="color:  rgb(255, 255, 255); font-size:1.5cm;text-decoration: none;">↓</p></a>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="script.js"></script>
+  <div class="timeline-section" id="intern4">
+    <div class="timeline-content">
+      <h2><strong>Exposys Data Labs</strong></h2>
+      <div class="timeline-text">
+        <img src="../Resources/exposys.png" alt="Flower Image">
+        <p><strong>Role:</strong> Data Science Intern</p>
+        <p><strong>Duration:</strong> January 2023 - March 2023</p>
+        <p><strong>Key Contributions:</strong></p>
+        <ul>
+          <li>Analyzed large datasets to drive business decisions.</li>
+          <li>Built machine learning models to optimize marketing strategies.</li>
+        </ul>
+        <a href="#intern5" style="text-decoration: none;"><p class="arrow"; style="color:  rgb(255, 255, 255); font-size:1.5cm;text-decoration: none;">↓</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-section" id="intern5">
+    <div class="timeline-content">
+      <h2><strong>HILIFE.<span style="color: rgb(255, 166, 0);">AI</span></strong></h2>
+      <div class="timeline-text">
+        <img src="https://about.hilifeai.com/wp-content/themes/hilife/images/logo.png" alt="Flower Image">
+        <p><strong>Role:</strong> Software Developer Intern</p>
+        <p><strong>Duration:</strong> June 2023 - August 2023</p>
+        <p><strong>Key Contributions:</strong></p>
+        <ul>
+          <li>Developed a full-stack web application using React and Node.js.</li>
+          <li>Collaborated with cross-functional teams to design scalable solutions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certificates-section" id="certificates">
+  <div class="certificates-content">
+      <h1 class="certificates-title">My Certificates</h1>
+      <p class="certificates-description">
+          Explore my certificates showcasing my skills and achievements in various fields.
+          Click the button below to view my certificates gallery!
+      </p><br><br>
+      <a href="certificates.html" class="certificates-button">View Certificates</a><span class="break"><br><br><br><br></span>
+  </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- Blog Section -->
+<section class="blog-section" id="blog">
+    <div class="blog-content">
+      <h2 class="blog-title">Time and Thought Blog</h2>
+      <br><br><br>
+      <p class="blog-description">
+        Explore a wide range of topics on the Time and Thought blog, where ideas, insights, and stories flow freely across categories like travel, technology, and more. Dive into the articles, gain new perspectives, and be part of the conversation. Want to share your own thoughts? Head over to the menu and choose "Add Your Post" to contribute to the blog!
+      </p>
+      <iframe class="blog-iframe" src="https://blogs.abdulhajees.in" frameborder="0"></iframe>
+    </div>
+  </section>
+  
+  
+
+</div>
+
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>
