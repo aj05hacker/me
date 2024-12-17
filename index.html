@@ -87,14 +87,20 @@
     
     <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#736c6b"> <!-- Replace with your site's main color -->
+
+  <!-- Firebase Compatibility SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+
+
+
+      
+      
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Klee+One:wght@600&family=Kotta+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Firebase Compatibility SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 <body id="home"> 
 
@@ -103,8 +109,8 @@
 <a href="#" class="back-to-top" id="backToTop">
     &#8679; <!-- Upward arrow symbol -->
 </a>
+<div id="visitCounter">Loading visits...</div>
 
-    <div id="visitCounter">Loading visits...</div>
 
     <img src="./Resources/logo.svg" alt="Logo" class="logo">
 <!-- Custom Navbar -->
@@ -113,6 +119,7 @@
     <div class="custom-navbar-scroll-indicator left" onclick="customNavbarScroll(-150)" aria-label="Scroll Left"></div>
 
     <!-- Navbar Links -->
+
     <div class="custom-navbar" id="customNavbar">
         <ul class="custom-navbar-list">
             <li><a href="#home" class="custom-navbar-link active">Home</a></li>
@@ -351,8 +358,7 @@
                         <a href="https://me.abdulhajees.in" class="projects-btn projects-card_btn" style="padding-left: 26%;">View Live Project</a>
                     </div>
                 </div>
-            </li>            
-            <li class="projects-cards_item">
+            </li>            <li class="projects-cards_item">
                 <div class="projects-card">
                     <div class="projects-card_image">
                         <img class="projects-card_img" src="/Resources/project_4.jpg" alt="Project Image 3">
@@ -466,6 +472,7 @@
 </section>
 <br><br id="blog"><br><br><br><br><br><br><br><br>
 
+
 <!-- Blog Section -->
 <section class="blog-section" id="blog">
     <div class="blog-content">
@@ -477,12 +484,95 @@
       <iframe class="blog-iframe" src="https://blogs.abdulhajees.in" frameborder="0" title="Time and Thought Blog"></iframe>
     </div>
   </section>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+  <!-- Contact me================================= -->
+
+
+
+
+  <section id="contact" class="contact-section" style="width: 100vw; padding: 5%; background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="section-title" style="font-size: 2rem; font-weight: bold; color: #333;">Contact Me</h2>
+                <p class="section-description" style="font-size: 1.1rem; color: #555;">
+                    Feel free to reach out for any inquiries or collaboration opportunities. I look forward to hearing from you!
+                </p>
+            </div>
+            <br><br>
+            <div class="col-lg-6">
+                <div class="contact-info" style="text-align: left; padding-left: 10%; font-size: 1rem;">
+                    <h3 style="font-size: 1.5rem; font-weight: bold; color: #333;">Let's Connect</h3>
+                    <p style="margin: 10px 0;"><i class="fas fa-phone-alt" style="color: #007bff;"></i> +91 93617 30050</p>
+                    <p style="margin: 10px 0;"><i class="fas fa-envelope" style="color: #007bff;"></i> me@abdulhajees.in</p>
+                    <p style="margin: 10px 0;"><i class="fas fa-map-marker-alt" style="color: #007bff;"></i> Trichy, Tamil Nadu, India.</p>
+                    <div style="margin-top: 20px;">
+                        <h4 style="font-size: 1.3rem; color: #333;">Social Media</h4>
+                        <p>
+                            <a href="https://www.linkedin.com/in/abdulhajees/" target="_blank" style="color: #0077b5; text-decoration: none; margin-right: 15px;">
+                                <i class="fab fa-linkedin" style="font-size: 1.5rem;"></i> LinkedIn
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/aj05hacker" target="_blank" style="color: #333; text-decoration: none; margin-right: 15px;">
+                                <i class="fab fa-github" style="font-size: 1.5rem;"></i> GitHub
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/abdul_hajees/" target="_blank" style="color: #e4405f; text-decoration: none; margin-right: 15px;">
+                                <i class="fab fa-instagram" style="font-size: 1.5rem;"></i> Instagram
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- AI Section -------------------------- -->
+
+<section class="portfolio-section" id="ai">
+    <iframe 
+        src="https://about.abdulhajees.in/" 
+        class="portfolio-iframe" 
+        id="portfolio-iframe">
+    </iframe>
+</section>
+
+
+
+
+
+
+<!-- Footer ============================= -->
+<section>
+  <div class="footer">
+    <i><b style="color:black;">©2024 Abdul Hajees. All Rights Reserved.</b></i>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/abdulhajees/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.github.com/aj05hacker" target="_blank" class="fab fa-github"></a>
+      <a href="https://www.instagram.com/abdul_hajees" target="_blank" class="fab fa-instagram"></a>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- Add Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
   
   
 
 </div>
-
-
     <script src="script.js"></script>
     <script src="counter.js"></script>
 </body>
