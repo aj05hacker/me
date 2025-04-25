@@ -372,18 +372,6 @@ z-index: -2; /* Places the image behind other content */
 @media (max-width: 768px) { 
 .full-screen-image {
     background-image: url('./Resources/mobile-bg2.svg'); /* Different image for mobile */
-  
-}
-
-
-.hero-image {
-  width: 330px;
-  height: 350px;
-  border-radius: 100%;
-  overflow: hidden;
-  padding-right: 40%;
-  padding-top: -5cm;
-
 }
 }
 
@@ -403,8 +391,8 @@ z-index: -2; /* Places the image behind other content */
 }
 
 .hero-image img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -463,7 +451,7 @@ z-index: -2; /* Places the image behind other content */
 
 
   .hero-image {
-  width: 350px;
+  width: 270px;
   height: 270px;
   border-radius: 0%;
   overflow: hidden;
