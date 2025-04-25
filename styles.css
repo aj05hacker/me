@@ -381,8 +381,8 @@ z-index: -2; /* Places the image behind other content */
 
 
 .hero-image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 0%;
   overflow: hidden;
   padding-right: 40%;
