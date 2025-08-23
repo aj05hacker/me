@@ -25,12 +25,6 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://me.abdulhajees.in/certificates.html</loc>
-        <lastmod>2024-10-20</lastmod> <!-- Update this as needed -->
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://me.abdulhajees.in/index.html</loc>
         <lastmod>2024-10-20</lastmod> <!-- Update this to the last modification date -->
         <changefreq>monthly</changefreq>
